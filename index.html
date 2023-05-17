@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor de Código</title>
+    <link rel="stylesheet" href="codificado.css" />
+    <script src="codificado.js"></script>
+  </head>
+  <body>
+    <style class="style"></style>
+    <script class="script"></script>
+    <main class="editores">
+      <section class="codhtml">
+        <h1 class="hed">HTML</h1>
+        <textarea
+          id="html"
+          class="text"
+          placeholder="Digite o HTML aqui..."
+          cols="30"
+          rows="10"
+          onblur="linhastext(0), lerhtml()"
+        ></textarea>
+        <h4 class="linha">1 Linha</h4>
+      </section>
+      <section class="codcss">
+        <h1 class="hed">CSS</h1>
+        <textarea
+          id="css"
+          class="text"
+          placeholder="Digite o CSS aqui..."
+          cols="30"
+          rows="10"
+          onblur="linhastext(1), lercss()"
+        ></textarea>
+        <h4 class="linha">1 Linha</h4>
+      </section>
+      <section class="codcss">
+        <h1 class="hed">JavaScript</h1>
+        <textarea
+          id="js"
+          class="text"
+          placeholder="Digite o JavaScript aqui..."
+          cols="30"
+          rows="10"
+          onblur="linhastext(2), lerjs()"
+        ></textarea>
+        <h4 class="linha">1 Linha</h4>
+      </section>
+    </main>
+    <main class="visual"></main>
+  </body>
+</html>
